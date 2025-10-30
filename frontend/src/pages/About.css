@@ -1,0 +1,26 @@
+/* About page styles */
+.about-page .intro { padding-top: 3rem; padding-bottom: 2rem; }
+.about-page .lead { font-size: 1.125rem; color: var(--color-text-light); max-width: 720px; }
+.vision-figure img { width: 100%; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); }
+
+.team-section .team-card { text-align: center; padding: 1.25rem; }
+.team-photo { width: 100%; height: 220px; object-fit: cover; border-radius: var(--radius-md); margin-bottom: 1rem; }
+.role { color: var(--color-text-light); font-weight: 600; margin-bottom: 0.5rem; }
+
+.certifications { background: var(--color-surface); padding: 2rem 0; }
+.cert-grid { display: flex; gap: 2rem; justify-content: center; align-items: center; flex-wrap: wrap; }
+.cert-item { display:flex; flex-direction:column; gap:0.5rem; align-items:center; padding:1rem; min-width:140px; background:var(--color-secondary); border-radius:var(--radius-md); box-shadow:var(--shadow-sm); }
+.cert-item img { width:72px; height:auto; }
+
+.contact-cta { padding: 3rem 0; }
+.contact-cta .button { margin-top: 1rem; }
+
+@media (max-width: 900px) {
+  .grid-3 { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 640px) {
+  .grid-3 { grid-template-columns: 1fr; }
+  .vision-figure { display: none; }
+  .team-photo { height: 180px; }
+}

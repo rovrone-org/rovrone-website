@@ -1,0 +1,43 @@
+/* Services page styles */
+.services-page .hero {
+  display: grid;
+  grid-template-columns: 1fr 420px;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: var(--spacing-3xl);
+}
+
+.hero-content h1 { font-size: 2.5rem; margin-bottom: 0.5rem }
+.hero-content .lead { color: var(--color-text-light); max-width: 680px }
+.hero-visual img { width: 100%; border-radius: var(--radius-lg); box-shadow: var(--shadow-lg); }
+
+.hero-ctas { margin-top: 1rem; display:flex; gap:1rem }
+
+.services-grid { display: grid; gap: 1.25rem; }
+.services-grid.grid-3 { grid-template-columns: repeat(3, 1fr); }
+
+.service-card { display:flex; flex-direction:column; gap:1rem; }
+.service-card-head { display:flex; gap:1rem; align-items:center }
+.service-icon { width:56px; height:56px; object-fit:contain }
+.muted { color: var(--color-text-light); }
+
+.service-features { list-style: none; padding-left: 0; margin: 0; display: grid; gap: 0.5rem }
+.service-features li { padding-left: 1rem; position: relative }
+.service-features li::before { content: '•'; position: absolute; left: 0; color: var(--color-accent) }
+
+.service-actions { display:flex; gap: 0.75rem; margin-top: 1rem; align-items:center }
+.service-actions .button { padding: 0.5rem 0.9rem; border-radius: var(--radius-md); }
+.service-actions .button-primary { background: var(--color-accent); color: white }
+
+/* Card visuals */
+.card { padding: 1rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); background: var(--color-secondary) }
+
+@media (max-width: 1024px) {
+  .services-page .hero { grid-template-columns: 1fr; }
+  .services-grid.grid-3 { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 680px) {
+  .services-grid.grid-3 { grid-template-columns: 1fr; }
+  .hero-visual { display:none }
+}

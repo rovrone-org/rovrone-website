@@ -1,0 +1,52 @@
+@import './styles/variables.css';
+
+:root {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color-scheme: light;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--color-secondary);
+  color: var(--color-primary);
+  line-height: 1.5;
+  min-width: 320px;
+  font-size: 16px;
+}
+
+a { color: var(--color-primary); text-decoration: none }
+a:hover { color: var(--color-accent) }
+
+h1 { font-size: 2rem; line-height: 1.05; margin: 0 0 8px }
+h2 { font-size: 1.25rem }
+
+button {
+  background: var(--color-accent);
+  color: var(--color-secondary);
+  border: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+button:hover { opacity: 0.95 }
+
+.container { max-width: var(--max-width); margin: 0 auto; padding: 0 var(--container-padding) }
+
+/* layout utilities */
+.page { padding: 36px 0 }
+
+/* simple grid for cards */
+.services-grid, .products-grid { display:grid; gap:18px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-top:16px }
+.service-card, .product-card { border-radius: var(--radius); padding:16px; background:#fff; box-shadow: 0 8px 20px rgba(0,0,0,0.06); border:1px solid rgba(0,0,0,0.04) }
+
+@media (max-width: 720px) {
+  h1 { font-size: 1.6rem }
+  .container { padding: 0 16px }
+}
