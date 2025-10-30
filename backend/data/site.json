@@ -1,0 +1,18 @@
+{
+  "name": "RovrOne Labs Private Limited",
+  "description": "Engineering and product lab focused on drones, robotics and platforms.",
+  "hero": {
+    "title": "RovrOne Labs",
+    "subtitle": "Trusted systems for aerial and ground robotics — engineering, manufacturing and training.",
+    "cta": "Get a quote"
+  },
+  "contact": {
+    "email": "hello@rovrone.com",
+    "phone": "+91-800-000-0000",
+    "address": "Bengaluru, India"
+  },
+  "social": {
+    "linkedin": "",
+    "twitter": ""
+  }
+}
