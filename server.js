@@ -19,6 +19,11 @@ app.use((err, req, res, next) => {
   res.status(500).json({ success: false, errors: [err.message || 'Server error'] });
 });
 
-app.listen(PORT, () => {
-  console.log(`Backend server listening on port ${PORT}`);
-});
+if (require.main === module) {
+  app.listen(PORT, () => {
+    console.log(`Backend server listening on port ${PORT}`);
+  });
+}
+
+// Export the app so serverless platforms (Vercel) can mount it.
+module.exports = app;
