@@ -4,12 +4,12 @@ function Products() {
   const [products, setProducts] = useState([])
 
   useEffect(() => {
-    fetch('/api/products')
+    fetch('/data/products.json')
       .then((r) => r.json())
       .then((json) => {
-        if (json && json.success) setProducts(json.data)
+        if (Array.isArray(json)) setProducts(json)
       })
-      .catch((err) => console.error('Failed to fetch products', err))
+      .catch((err) => console.error('Failed to load products', err))
   }, [])
 
   return (

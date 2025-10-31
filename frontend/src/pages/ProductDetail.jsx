@@ -8,13 +8,17 @@ function ProductDetail() {
 
   useEffect(() => {
     if (!id) return
-    fetch(`/api/products/${id}`)
+    // Load the products JSON and find the requested id locally so the page
+    // works when the backend API is not available in production.
+    fetch('/data/products.json')
       .then((r) => r.json())
-      .then((json) => {
-        if (json && json.success) setProduct(json.data)
-        else setError((json && json.errors) || ['Failed to load'])
+      .then((list) => {
+        if (!Array.isArray(list)) return setError(['Invalid products data'])
+        const found = list.find((p) => p.id === id)
+        if (found) setProduct(found)
+        else setError([`Product not found: ${id}`])
       })
-      .catch((err) => setError([err.message]))
+      .catch((err) => setError([err.message || 'Failed to load products']))
   }, [id])
 
   if (error) return <section className="container"><h1>Product</h1><p>Error: {error.join('; ')}</p></section>

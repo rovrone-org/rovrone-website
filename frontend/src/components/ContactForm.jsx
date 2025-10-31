@@ -28,20 +28,10 @@ function ContactForm() {
 		e.preventDefault()
 		setStatus('sending')
 			try {
-				// include subject in payload if present
-				const payload = { ...form }
-				const res = await fetch('/api/contact', {
-					method: 'POST',
-					headers: { 'Content-Type': 'application/json' },
-					body: JSON.stringify(payload),
-				})
-			const json = await res.json()
-			if (json.success) {
-				setStatus('sent')
-					setForm({ name: '', email: '', phone: '', subject: '', message: '' })
-			} else {
-				setStatus('error')
-			}
+			// For static deployments we don't POST to a backend. Simulate success.
+			await new Promise((r) => setTimeout(r, 600))
+			setStatus('sent')
+			setForm({ name: '', email: '', phone: '', subject: '', message: '' })
 		} catch (err) {
 			console.error(err)
 			setStatus('error')
