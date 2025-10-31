@@ -1,0 +1,40 @@
+[
+  {
+    "id": "saksham-drone",
+    "title": "Saksham Drone",
+    "summary": "A reliable industrial drone designed for surveying and inspection.",
+    "description": "Saksham is a rugged industrial quadcopter designed for mapping, inspection and payload delivery in commercial environments. It features modular payload bays, safety-first avionics and a configurable autopilot.",
+    "specs": {
+      "endurance": "30 min",
+      "payload": "2 kg",
+      "max_speed": "72 km/h",
+      "warranty": "1 year"
+    },
+    "brochure": "",
+    "images": []
+  },
+  {
+    "id": "led-flying-screen",
+    "title": "LED Flying Screen Display",
+    "summary": "Aerial LED display system for events and installations.",
+    "description": "An integrated aerial display platform combining a stabilized LED matrix with flight-capable mounting. Designed for short-duration events and media displays.",
+    "specs": {
+      "display_resolution": "128x64",
+      "flight_time": "12-15 min"
+    },
+    "brochure": "",
+    "images": []
+  },
+  {
+    "id": "robotics-kit",
+    "title": "Modular Robotics Kit",
+    "summary": "Education-focused robotics kits for universities and labs.",
+    "description": "A modular kit for learning embedded systems, perception and control. Includes sensors, actuators and curriculum modules for instructors.",
+    "specs": {
+      "kit_variants": "basic, advanced",
+      "supported_languages": "Python, C++"
+    },
+    "brochure": "",
+    "images": []
+  }
+]

@@ -5,12 +5,12 @@ function Services() {
 	const [services, setServices] = useState([])
 
 	useEffect(() => {
-		fetch('/api/services')
+		fetch('/data/services.json')
 			.then((r) => r.json())
 			.then((json) => {
-				if (json && json.success) setServices(json.data)
+				if (Array.isArray(json)) setServices(json)
 			})
-			.catch((err) => console.error('Failed to fetch services', err))
+			.catch((err) => console.error('Failed to load services', err))
 	}, [])
 
 	return (

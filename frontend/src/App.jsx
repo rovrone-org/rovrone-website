@@ -19,12 +19,10 @@ function App() {
   const [site, setSite] = useState(null)
 
   useEffect(() => {
-    fetch('http://localhost:4000/api/site')
+    fetch('/data/site.json')
       .then((r) => r.json())
-      .then((json) => {
-        if (json && json.success) setSite(json.data)
-      })
-      .catch((err) => console.error('Failed to fetch site', err))
+      .then((json) => setSite(json))
+      .catch((err) => console.error('Failed to load site data', err))
   }, [])
 
   return (

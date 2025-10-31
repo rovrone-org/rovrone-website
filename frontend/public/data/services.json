@@ -1,0 +1,16 @@
+[
+  {
+    "id": "drone-manufacturing",
+    "title": "Drone Manufacturing",
+    "short": "Design and build custom drones.",
+    "full": "End-to-end design and manufacturing of UAVs for commercial and research applications.",
+    "images": []
+  },
+  {
+    "id": "daas",
+    "title": "DaaS (Drone as a Service)",
+    "short": "Operational drone services.",
+    "full": "Managed drone operations, data capture, and analytics for clients.",
+    "images": []
+  }
+]

@@ -1,7 +1,7 @@
 const path = require('path');
 const fs = require('fs');
 
-const dataPath = path.join(__dirname, '..', 'data', 'products.json');
+const dataPath = path.resolve(process.cwd(), 'data', 'products.json');
 
 function readProducts() {
   const raw = fs.readFileSync(dataPath, 'utf8');
