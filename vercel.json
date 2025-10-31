@@ -23,8 +23,12 @@
       "dest": "server.js"
     },
     {
-      "src": "/(.*)",
-      "dest": "/"
+      "src": "/images/(.*)",
+      "dest": "/images/placeholder.svg"
+    },
+    {
+      "src": "(/.*)",
+      "dest": "/index.html"
     }
   ]
 }
