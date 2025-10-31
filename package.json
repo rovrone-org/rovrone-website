@@ -10,6 +10,7 @@
     "client:dev": "cd frontend && vite",
     "client:build": "cd frontend && vite build",
     "build": "npm run client:build",
+    "vercel-build": "npm run build",
     "client:lint": "cd frontend && eslint .",
     "client:preview": "cd frontend && vite preview",
     "client:test": "cd frontend && jest"
