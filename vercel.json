@@ -2,18 +2,18 @@
   "version": 2,
   "builds": [
     {
+      "src": "server.js",
+      "use": "@vercel/node",
+      "config": {
+        "includeFiles": ["data/**"]
+      }
+    },
+    {
       "src": "package.json",
       "use": "@vercel/static-build",
       "config": {
         "buildCommand": "npm run build",
         "outputDirectory": "frontend/dist"
-      }
-    },
-    {
-      "src": "server.js",
-      "use": "@vercel/node",
-      "config": {
-        "includeFiles": ["data/**"]
       }
     }
   ],
@@ -24,11 +24,7 @@
     },
     {
       "src": "/(.*)",
-      "handle": "filesystem"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/index.html"
+      "dest": "/"
     }
   ]
 }
