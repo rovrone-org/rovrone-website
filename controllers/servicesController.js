@@ -1,7 +1,7 @@
 const path = require('path');
 const fs = require('fs');
 
-const dataPath = path.join(__dirname, '..', 'data', 'services.json');
+const dataPath = path.resolve(process.cwd(), 'data', 'services.json');
 
 exports.getServices = (req, res) => {
   try {

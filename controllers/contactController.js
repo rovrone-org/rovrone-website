@@ -1,8 +1,8 @@
 const path = require('path');
 const fs = require('fs');
 
-const contactsPath = path.join(__dirname, '..', 'data', 'contacts.json');
-const subsPath = path.join(__dirname, '..', 'data', 'subscribers.json');
+const contactsPath = path.resolve(process.cwd(), 'data', 'contacts.json');
+const subsPath = path.resolve(process.cwd(), 'data', 'subscribers.json');
 
 function safeReadJson(filePath, defaultVal) {
   try {
