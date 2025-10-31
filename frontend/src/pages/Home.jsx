@@ -6,7 +6,7 @@ function Home({ site }) {
 	const [services, setServices] = useState([])
 
 	useEffect(() => {
-		fetch('http://localhost:4000/api/services')
+		fetch('/api/services')
 			.then((r) => r.json())
 			.then((json) => {
 				if (json && json.success) setServices(json.data)

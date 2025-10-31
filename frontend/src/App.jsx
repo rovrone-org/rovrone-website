@@ -19,7 +19,7 @@ function App() {
   const [site, setSite] = useState(null)
 
   useEffect(() => {
-    fetch('http://localhost:4000/api/site')
+    fetch('/api/site')
       .then((r) => r.json())
       .then((json) => {
         if (json && json.success) setSite(json.data)

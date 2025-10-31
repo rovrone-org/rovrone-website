@@ -8,7 +8,7 @@ function ProductDetail() {
 
   useEffect(() => {
     if (!id) return
-    fetch(`http://localhost:4000/api/products/${id}`)
+    fetch(`/api/products/${id}`)
       .then((r) => r.json())
       .then((json) => {
         if (json && json.success) setProduct(json.data)

@@ -37,7 +37,7 @@ To run the application in development mode, you need to start the backend server
     ```bash
     npm run dev
     ```
-    The backend will be available at `http://localhost:4000`.
+    The backend will be available at the same domain as the frontend, under the `/api` path.
 
 2.  **Start the Frontend Dev Server:**
     In a separate terminal, run the Vite development server. This provides hot-reloading and a better development experience for the UI.
