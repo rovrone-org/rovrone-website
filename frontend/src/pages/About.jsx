@@ -40,23 +40,23 @@ function About() {
 					<div className="grid-3">
 						<article className="team-card card">
 							<img src="/images/team/alex.jpg" alt="Alex Chen" className="team-photo" />
-							<h3>Alex Chen</h3>
-							<p className="role">Founder & CEO</p>
+							<h3>Mohammad Ahmar Ansari</h3>
+							<p className="role">Founder & Director</p>
 							<p>Systems engineer with 12+ years in autonomy and product development. Leads company strategy and client partnerships.</p>
 						</article>
 
 						<article className="team-card card">
 							<img src="/images/team/maya.jpg" alt="Maya Patel" className="team-photo" />
-							<h3>Maya Patel</h3>
-							<p className="role">Head of Robotics</p>
+							<h3>Siddhant Shaw</h3>
+							<p className="role">Head of Robotics and Drone & Director</p>
 							<p>Expert in avionics and flight systems, oversees hardware development and field deployments.</p>
 						</article>
 
 						<article className="team-card card">
 							<img src="/images/team/omar.jpg" alt="Omar Ruiz" className="team-photo" />
-							<h3>Omar Ruiz</h3>
-							<p className="role">Lead ML & Autonomy</p>
-							<p>Research scientist focused on robust perception and control for real-time operation in the field.</p>
+							<h3>Abhinav Pavithran</h3>
+							<p className="role">Director</p>
+							<p>Experienced in GenAI and Computer Vision, focusing on product development and operational excellence.</p>
 						</article>
 					</div>
 				</div>
