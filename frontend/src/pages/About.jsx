@@ -39,21 +39,21 @@ function About() {
 
 					<div className="grid-3">
 						<article className="team-card card">
-							<img src="/images/team/alex.jpg" alt="Alex Chen" className="team-photo" />
+							<img src="/images/team/Mohd_Ahmar.jpg" alt="Mohammad Ahmar Ansari" className="team-photo" />
 							<h3>Mohammad Ahmar Ansari</h3>
 							<p className="role">Founder & Director</p>
 							<p>Systems engineer with 12+ years in autonomy and product development. Leads company strategy and client partnerships.</p>
 						</article>
 
 						<article className="team-card card">
-							<img src="/images/team/maya.jpg" alt="Maya Patel" className="team-photo" />
+							<img src="/images/team/siddhant.jpg" alt="Siddhant Shaw" className="team-photo" />
 							<h3>Siddhant Shaw</h3>
 							<p className="role">Head of Robotics and Drone & Director</p>
 							<p>Expert in avionics and flight systems, oversees hardware development and field deployments.</p>
 						</article>
 
 						<article className="team-card card">
-							<img src="/images/team/omar.jpg" alt="Omar Ruiz" className="team-photo" />
+							<img src="/images/team/Abhinav_Pavithran.jpg" alt="Abhinav Pavithran" className="team-photo" />
 							<h3>Abhinav Pavithran</h3>
 							<p className="role">Director</p>
 							<p>Experienced in GenAI and Computer Vision, focusing on product development and operational excellence.</p>
