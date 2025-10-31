@@ -10,14 +10,6 @@ app.use(express.json());
 
 app.use('/api', apiRouter);
 
-// Serve frontend
-const frontendPath = path.resolve(__dirname, 'frontend', 'dist');
-app.use(express.static(frontendPath));
-
-app.get('*', (req, res) => {
-  res.sendFile(path.resolve(frontendPath, 'index.html'));
-});
-
 app.get('/health', (req, res) => {
   res.json({ success: true, data: { status: 'ok' } });
 });
