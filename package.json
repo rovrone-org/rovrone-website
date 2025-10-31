@@ -9,6 +9,7 @@
     "test": "jest --runInBand",
     "client:dev": "cd frontend && vite",
     "client:build": "cd frontend && vite build",
+    "build": "npm run client:build",
     "client:lint": "cd frontend && eslint .",
     "client:preview": "cd frontend && vite preview",
     "client:test": "cd frontend && jest"
